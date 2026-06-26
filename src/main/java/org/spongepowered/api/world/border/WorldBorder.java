@@ -139,7 +139,7 @@ public interface WorldBorder {
      *
      * @return The warning time
      */
-    Duration warningTime();
+    Ticks warningTime();
 
     /**
      * Gets the distance when a contracting world border will warn a player for
@@ -251,7 +251,7 @@ public interface WorldBorder {
          * @param warningTime The warning time
          * @return The builder, for chaining
          */
-        Builder warningTime(final Duration warningTime);
+        Builder warningTime(final Ticks warningTime);
 
         /**
          * Sets the warning distance of this world border.
